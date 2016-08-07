@@ -1,4 +1,28 @@
-# Logistic Regression Modeling of Real Estate Properties
+<script>
+import moment from 'moment';
+
+export default {
+  data () {
+    return {
+      currentDate: moment().format("MMM Do")
+    }
+  }
+}
+
+</script>
+
+<div>
+
+  <h1 class="title is-2">Logistic Regression Modeling of Real Estate Properties</h1>
+  <h2 class="subtitle is-4"> {{currentDate}} </h2>
+  </br>
+  <div class="has-text-right">
+    <span class="tag is-dark">Logistic Regression</span>
+    <span class="tag is-primary">Machine Learning</span>
+    <span class="tag is-info">Statistics</span>
+  </div>
+  </br>
+</div>
 
 ![header image](src/assets/images/logistic_regression.png)
 
