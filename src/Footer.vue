@@ -3,7 +3,7 @@
     <div class="container">
       <div class="content has-text-centered">
         <p>
-          Alex Sinfarosa | Built with <a href="https://vuejs.org">VueJS</a> and <a href="http://bulma.io">Bulma</a>
+          © Alex Sinfarosa 2016 | Built with <a href="https://vuejs.org">VueJS</a> and <a href="http://bulma.io">Bulma</a>
         </p>
       </div>
     </div>

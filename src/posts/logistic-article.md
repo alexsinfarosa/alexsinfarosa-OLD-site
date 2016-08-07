@@ -1,25 +1,24 @@
 <script>
-import moment from 'moment';
+  import moment from 'moment';
 
-export default {
-  data () {
-    return {
-      currentDate: moment().format("MMM Do"),
-      displayPost: false
-    }
-  },
-  methods: {
-    readMore: function() {
-      this.displayPost = true
+  export default {
+    data () {
+      return {
+        postDate: moment().format("MMMM Do Y"),
+        displayPost: false
+      }
+    },
+    methods: {
+      readMore: function() {
+        this.displayPost = true
+      }
     }
   }
-}
-
 </script>
 
 <div>
   <h1 class="title is-2">Logistic Regression Modeling of Real Estate Properties</h1>
-  <h2 class="subtitle is-4"> {{currentDate}} </h2>
+  <h2 class="subtitle is-5 tag"> {{postDate}} </h2>
   </br>
   <div class="has-text-right">
     <span class="tag is-success">Logistic Regression</span>
