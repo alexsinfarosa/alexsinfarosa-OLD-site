@@ -20,20 +20,21 @@
 </template>
 
 <script>
-import markdown from './posts/logistic-article.md'
-import navigation from './Nav.vue'
-import myFooter from './footer.vue'
+import Markdown from './posts/logistic-article.md'
+import Navigation from './Nav.vue'
+import MyFooter from './footer.vue'
 
 export default {
+  components: {
+    Markdown,
+    Navigation,
+    MyFooter
+  },
+
   data () {
     return {
       msg: 'Hello Vue 2.0!'
     }
-  },
-  components: {
-    markdown,
-    navigation,
-    myFooter
   }
 }
 </script>
