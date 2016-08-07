@@ -4,7 +4,13 @@ import moment from 'moment';
 export default {
   data () {
     return {
-      currentDate: moment().format("MMM Do")
+      currentDate: moment().format("MMM Do"),
+      displayPost: false
+    }
+  },
+  methods: {
+    readMore: function() {
+      this.displayPost = true
     }
   }
 }
@@ -12,14 +18,13 @@ export default {
 </script>
 
 <div>
-
   <h1 class="title is-2">Logistic Regression Modeling of Real Estate Properties</h1>
   <h2 class="subtitle is-4"> {{currentDate}} </h2>
   </br>
   <div class="has-text-right">
-    <span class="tag is-dark">Logistic Regression</span>
+    <span class="tag is-success">Logistic Regression</span>
     <span class="tag is-primary">Machine Learning</span>
-    <span class="tag is-info">Statistics</span>
+    <span class="tag is-warning">Statistics</span>
   </div>
   </br>
 </div>
@@ -27,6 +32,10 @@ export default {
 ![header image](src/assets/images/logistic_regression.png)
 
 I was recently tasked with discovering some additional information from a set of housing data in the upstate New York region that could help elucidate why some properties sell over others. Given two `csv` files with data from active and sold properties, I immediately thought how cool it would be to build a predictive model using logistic regression! I built the whole thing in R, too, which gave me more experience with the software, and surprised me in its simplicity and power. I was limited by my dataset, as it was not as large as I would have hoped for, but nevertheless, I got right down to work.
+
+<button v-on:click="readMore" v-show="!displayPost" class="button is-info is-outlined">More...</button>
+
+<section v-show="displayPost">
 
 ### Data Data Data...
 
@@ -79,3 +88,5 @@ Further work would require a larger dataset that would allow for more specific f
 However, given the limited amount of data, certain groups were vastly small in size (approx. 1-2) and odd in dimensions (2 data points for unsold versus 4 data points for sold) which was indicative that the use of this algorithm would be inefficient and likely to yield incorrect results. Given the limited dataset, the method used for dimensionality reduction was not as sophisticated as it could have been, which is something that would be greatly improved with larger datasets. In addition, for greater efficiency of these machine learning algorithms, it is important to have a large training dataset for properties unsold and sold so predictions can be higher in accuracy when working with data of active properties, where one may wish to determine why a property has remained on the market for x period of time.
 
 This brings me to my last suggestion for another avenue for possible further work – having a spread-sheet of data of properties that were recently removed from being active; and to examine the model's accuracy with it's predictions. I am currently working on visualizing this data via the JavaScript library [d3.js.](https://d3js.org/).
+
+</section>

@@ -18966,14 +18966,23 @@ module.exports = Vue;
 //
 //
 //
+//
+//
+//
 
 
 
 /* harmony default export */ exports["default"] = {
   data() {
     return {
-      currentDate: __WEBPACK_IMPORTED_MODULE_0_moment___default()().format("MMM Do")
+      currentDate: __WEBPACK_IMPORTED_MODULE_0_moment___default()().format("MMM Do"),
+      displayPost: false
     };
+  },
+  methods: {
+    readMore: function () {
+      this.displayPost = true;
+    }
   }
 };
 
@@ -19163,7 +19172,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -19177,7 +19186,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -19438,13 +19447,13 @@ module.exports = __vue_exports__
 var __vue_exports__, __vue_options__
 
 /* styles */
-__webpack_require__(124)
+__webpack_require__(123)
 
 /* script */
 __vue_exports__ = __webpack_require__(108)
 
 /* template */
-var __vue_template__ = __webpack_require__(119)
+var __vue_template__ = __webpack_require__(118)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (typeof __vue_exports__.default === "object") {
 __vue_options__ = __vue_exports__ = __vue_exports__.default
@@ -19465,13 +19474,13 @@ module.exports = __vue_exports__
 var __vue_exports__, __vue_options__
 
 /* styles */
-__webpack_require__(123)
+__webpack_require__(124)
 
 /* script */
 __vue_exports__ = __webpack_require__(109)
 
 /* template */
-var __vue_template__ = __webpack_require__(118)
+var __vue_template__ = __webpack_require__(119)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (typeof __vue_exports__.default === "object") {
 __vue_options__ = __vue_exports__ = __vue_exports__.default
@@ -19505,30 +19514,6 @@ module.exports={render:function(){with(this) {
 
 /***/ },
 /* 118 */
-/***/ function(module, exports) {
-
-module.exports={render:function(){with(this) {
-  return _m(0)
-}},staticRenderFns: [function(){with(this) {
-  return _h('footer', {
-    staticClass: "footer"
-  }, [_h('div', {
-    staticClass: "container"
-  }, [_h('div', {
-    staticClass: "content has-text-centered"
-  }, [_h('p', ["\n        Alex Sinfarosa | Built with ", _h('a', {
-    attrs: {
-      "href": "https://vuejs.org"
-    }
-  }, ["VueJS"]), " and ", _h('a', {
-    attrs: {
-      "href": "http://bulma.io"
-    }
-  }, ["Bulma"])])])])])
-}}]}
-
-/***/ },
-/* 119 */
 /***/ function(module, exports) {
 
 module.exports={render:function(){with(this) {
@@ -19591,13 +19576,55 @@ module.exports={render:function(){with(this) {
 }}]}
 
 /***/ },
+/* 119 */
+/***/ function(module, exports) {
+
+module.exports={render:function(){with(this) {
+  return _m(0)
+}},staticRenderFns: [function(){with(this) {
+  return _h('footer', {
+    staticClass: "footer"
+  }, [_h('div', {
+    staticClass: "container"
+  }, [_h('div', {
+    staticClass: "content has-text-centered"
+  }, [_h('p', ["\n        Alex Sinfarosa | Built with ", _h('a', {
+    attrs: {
+      "href": "https://vuejs.org"
+    }
+  }, ["VueJS"]), " and ", _h('a', {
+    attrs: {
+      "href": "http://bulma.io"
+    }
+  }, ["Bulma"])])])])])
+}}]}
+
+/***/ },
 /* 120 */
 /***/ function(module, exports) {
 
 module.exports={render:function(){with(this) {
   return _h('section', [_h('div', [_m(0), " ", _h('h2', {
     staticClass: "subtitle is-4"
-  }, [" " + _s(currentDate) + " "]), " ", _m(1), " ", _m(2), " ", _m(3)]), " ", _m(4), " ", _m(5), " ", _m(6), " ", _m(7), " ", _m(8), " ", _m(9), " ", _m(10), " ", _m(11), " ", _m(12), " ", _m(13), " ", _m(14), " ", _m(15), " ", _m(16), " ", _m(17), " ", _m(18), " ", _m(19), " ", _m(20), " ", _m(21), " ", _m(22), " ", _m(23), " ", _m(24), " ", _m(25), " ", _m(26), " ", _m(27), " ", _m(28), " ", _m(29), " ", _m(30), " ", _m(31)])
+  }, [" " + _s(currentDate) + " "]), " ", _m(1), " ", _m(2), " ", _m(3)]), " ", _m(4), " ", _m(5), " ", _h('p', [_h('button', {
+    directives: [{
+      name: "show",
+      value: (!displayPost),
+      expression: "!displayPost"
+    }],
+    staticClass: "button is-info is-outlined",
+    show: true,
+    on: {
+      "click": readMore
+    }
+  }, ["More..."])]), " ", _h('section', {
+    directives: [{
+      name: "show",
+      value: (displayPost),
+      expression: "displayPost"
+    }],
+    show: true
+  }, [_m(6), " ", _m(7), " ", _m(8), " ", _m(9), " ", _m(10), " ", _m(11), " ", _m(12), " ", _m(13), " ", _m(14), " ", _m(15), " ", _m(16), " ", _m(17), " ", _m(18), " ", _m(19), " ", _m(20), " ", _m(21), " ", _m(22), " ", _m(23), " ", _m(24), " ", _m(25), " ", _m(26), " ", _m(27), " ", _m(28), " ", _m(29), " ", _m(30), " ", _m(31)])])
 }},staticRenderFns: [function(){with(this) {
   return _h('h1', {
     staticClass: "title is-2"
@@ -19608,11 +19635,11 @@ module.exports={render:function(){with(this) {
   return _h('div', {
     staticClass: "has-text-right"
   }, [_h('span', {
-    staticClass: "tag is-dark"
+    staticClass: "tag is-success"
   }, ["Logistic Regression"]), " ", _h('span', {
     staticClass: "tag is-primary"
   }, ["Machine Learning"]), " ", _h('span', {
-    staticClass: "tag is-info"
+    staticClass: "tag is-warning"
   }, ["Statistics"])])
 }},function(){with(this) {
   return _h('br')
@@ -19741,8 +19768,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./footer.vue", function() {
-			var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./footer.vue");
+		module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Nav.vue", function() {
+			var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Nav.vue");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -19767,8 +19794,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Nav.vue", function() {
-			var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Nav.vue");
+		module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./footer.vue", function() {
+			var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./footer.vue");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
