@@ -32,7 +32,7 @@
 
 I was recently tasked with discovering some additional information from a set of housing data in the upstate New York region that could help elucidate why some properties sell over others. Given two `csv` files with data from active and sold properties, I immediately thought how cool it would be to build a predictive model using logistic regression! I built the whole thing in R, too, which gave me more experience with the software, and surprised me in its simplicity and power. I was limited by my dataset, as it was not as large as I would have hoped for, but nevertheless, I got right down to work.
 
-<button v-on:click="readMore" v-show="!displayPost" class="button is-info is-outlined">More...</button>
+<button v-on:click="readMore" v-show="!displayPost" class="button is-info is-outlined">Read More...</button>
 
 <section v-show="displayPost">
 
