@@ -21,8 +21,8 @@
 
 <script>
 import Markdown from './posts/logistic-article.md'
-import Navigation from './Nav.vue'
-import MyFooter from './footer.vue'
+import Navigation from './components/Nav.vue'
+import MyFooter from './components/footer.vue'
 
 export default {
   components: {
